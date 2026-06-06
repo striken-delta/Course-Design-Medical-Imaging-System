@@ -30,8 +30,12 @@ dist-ssr/
 Thumbs.db
 
 # ==================== Project-Specific ====================
-# Training dataset (large, not part of source)
+# Training pipeline (independent of runtime)
+model_t/
+
+# Training dataset
 data/
+dataset_infos.json
 
 # SQLite database
 backend/data/app.db
