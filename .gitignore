@@ -44,7 +44,7 @@ backend/data/app.db
 backend/uploads/
 
 # Models (large binary, managed separately)
-backend/models/*.pt
+# backend/models/*.pt
 
 # Claude Code local settings
 .claude/
