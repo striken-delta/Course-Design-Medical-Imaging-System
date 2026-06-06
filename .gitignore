@@ -1,0 +1,57 @@
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+
+# ==================== Node.js ====================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ==================== IDE ====================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==================== OS ====================
+.DS_Store
+Thumbs.db
+
+# ==================== Project-Specific ====================
+# Training dataset (large, not part of source)
+data/
+
+# SQLite database
+backend/data/app.db
+
+# Uploaded files (runtime)
+backend/uploads/
+
+# Models (large binary, managed separately)
+backend/models/*.pt
+
+# Claude Code local settings
+.claude/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/

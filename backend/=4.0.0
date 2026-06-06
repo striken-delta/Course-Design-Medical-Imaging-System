@@ -1,0 +1,5 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: bcrypt in C:\Users\delta\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages (5.0.0)
+
+[notice] A new release of pip is available: 26.1.1 -> 26.1.2
+[notice] To update, run: C:\Users\delta\AppData\Local\Python\pythoncore-3.14-64\python.exe -m pip install --upgrade pip
