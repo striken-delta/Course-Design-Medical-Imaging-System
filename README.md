@@ -119,57 +119,16 @@ software_engine/
 cd software_engine
 ```
 
-### 2. 后端环境配置
+### 2. 启动服务
 
 ```bash
-cd backend
-
-# 创建虚拟环境
-python -m venv venv
-
-# 激活虚拟环境（Windows PowerShell）
-.\venv\Scripts\Activate.ps1
-
-# 激活虚拟环境（Windows CMD）
-venv\Scripts\activate.bat
-
-# 激活虚拟环境（Linux / macOS）
-source venv/bin/activate
-
-# 安装依赖
-pip install -r requirements.txt
-```
-
-### 3. 前端环境配置
-
-```bash
-cd frontend
-
-# 安装依赖
-npm install
-```
-
-### 4. 启动服务
-
-**方式一：一键启动（Windows PowerShell，推荐）**
-
-```powershell
+# 双击 start.bat 或执行
 .\start.ps1
 ```
 
-**方式二：分别启动**
+**首次运行会自动安装所有依赖**（创建 venv + pip install + npm install），后续启动跳过安装，直接运行。唯一前提是本地已安装 **Python 3.10+** 和 **Node.js 18+**。
 
-```bash
-# 终端 1 — 启动后端
-cd backend
-venv\Scripts\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-
-# 终端 2 — 启动前端
-cd frontend
-npx vite --host 0.0.0.0 --port 5173
-```
-
-### 5. 访问系统
+### 3. 访问系统
 
 | 地址 | 说明 |
 |------|------|
@@ -178,7 +137,7 @@ npx vite --host 0.0.0.0 --port 5173
 | http://localhost:8000/docs | Swagger API 文档（自动生成） |
 | http://localhost:8000/api/v1/health | 健康检查 |
 
-### 6. 默认账号
+### 4. 默认账号
 
 | 角色 | 用户名 | 密码 |
 |------|--------|------|
